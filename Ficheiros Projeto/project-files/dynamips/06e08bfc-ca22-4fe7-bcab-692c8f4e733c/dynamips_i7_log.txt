@@ -1,0 +1,22 @@
+Jan 28 19:37:23.913 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 28 19:37:23.913 HYPERVISOR: Started on IP = localhost, TCP port = 52701.
+Jan 28 19:37:23.924 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 28 19:37:23.924 HYPERVISOR: exec_cmd: hypervisor working_dir /home/miguelferreira/Desktop/projetoredes-4/project-files/dynamips 
+Jan 28 19:37:23.924 GENERAL: working_dir=/home/miguelferreira/Desktop/projetoredes-4/project-files/dynamips
+Jan 28 19:37:23.925 HYPERVISOR: exec_cmd: ethsw create Switch5 
+Jan 28 19:37:24.868 HYPERVISOR: exec_cmd: nio create_udp udp-5c0131c8-3b47-4c68-8f8c-808d6b4c839a 10021 127.0.0.1 10020 
+Jan 28 19:37:24.868 HYPERVISOR: exec_cmd: ethsw add_nio Switch5 udp-5c0131c8-3b47-4c68-8f8c-808d6b4c839a 
+Jan 28 19:37:24.882 HYPERVISOR: exec_cmd: ethsw set_access_port Switch5 udp-5c0131c8-3b47-4c68-8f8c-808d6b4c839a 1 
+Jan 28 19:37:24.933 HYPERVISOR: exec_cmd: nio create_udp udp-87ecc3e0-9ab2-4146-a776-fc6dfaab8dff 10023 127.0.0.1 10022 
+Jan 28 19:37:24.934 HYPERVISOR: exec_cmd: ethsw add_nio Switch5 udp-87ecc3e0-9ab2-4146-a776-fc6dfaab8dff 
+Jan 28 19:37:24.943 HYPERVISOR: exec_cmd: ethsw set_access_port Switch5 udp-87ecc3e0-9ab2-4146-a776-fc6dfaab8dff 1 
+Jan 28 19:37:26.174 HYPERVISOR: exec_cmd: nio create_udp udp-fe0104f3-eaaa-40c9-a981-d39862021bef 10051 127.0.0.1 10050 
+Jan 28 19:37:26.174 HYPERVISOR: exec_cmd: ethsw add_nio Switch5 udp-fe0104f3-eaaa-40c9-a981-d39862021bef 
+Jan 28 19:37:26.179 HYPERVISOR: exec_cmd: ethsw set_access_port Switch5 udp-fe0104f3-eaaa-40c9-a981-d39862021bef 1 
+Jan 28 19:37:26.903 HYPERVISOR: exec_cmd: nio create_udp udp-11572cbd-006b-4003-980e-baa3afc7f058 10068 127.0.0.1 10069 
+Jan 28 19:37:26.903 HYPERVISOR: exec_cmd: ethsw add_nio Switch5 udp-11572cbd-006b-4003-980e-baa3afc7f058 
+Jan 28 19:37:26.911 HYPERVISOR: exec_cmd: ethsw set_access_port Switch5 udp-11572cbd-006b-4003-980e-baa3afc7f058 1 
+Jan 28 19:37:32.649 HYPERVISOR: exec_cmd: ethsw delete Switch5 
+Jan 28 19:37:32.719 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 28 19:37:32.937 HYPERVISOR: Stopped.
+Jan 28 19:37:32.937 GENERAL: reset done.

@@ -1,0 +1,63 @@
+Jan 28 16:13:10.822 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 28 16:13:10.822 HYPERVISOR: Started on IP = localhost, TCP port = 46767.
+Jan 28 16:13:10.830 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 28 16:13:10.831 HYPERVISOR: exec_cmd: hypervisor working_dir /home/miguelferreira/Desktop/projetoredes-4/project-files/dynamips 
+Jan 28 16:13:10.831 GENERAL: working_dir=/home/miguelferreira/Desktop/projetoredes-4/project-files/dynamips
+Jan 28 16:13:10.832 HYPERVISOR: exec_cmd: hypervisor working_dir /home/miguelferreira/Desktop/projetoredes-4/project-files/dynamips/328a3f2e-4392-4991-9fde-e77846f62114 
+Jan 28 16:13:10.832 GENERAL: working_dir=/home/miguelferreira/Desktop/projetoredes-4/project-files/dynamips/328a3f2e-4392-4991-9fde-e77846f62114
+Jan 28 16:13:10.832 HYPERVISOR: exec_cmd: vm create ESW1 1 c3725 
+Jan 28 16:13:10.833 VM: VM ESW1 created.
+Jan 28 16:13:10.833 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW1 5014 
+Jan 28 16:13:10.834 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW1 
+Jan 28 16:13:10.834 HYPERVISOR: exec_cmd: vm set_disk0 ESW1 1 
+Jan 28 16:13:10.835 HYPERVISOR: exec_cmd: vm set_ios ESW1 /home/miguelferreira/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21(1).image 
+Jan 28 16:13:10.835 HYPERVISOR: exec_cmd: c3725 set_mac_addr ESW1 c201.5894.0000 
+Jan 28 16:13:10.835 HYPERVISOR: exec_cmd: vm set_nvram ESW1 256 
+Jan 28 16:13:10.835 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jan 28 16:13:10.835 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 1 0 NM-16ESW 
+Jan 28 16:13:10.836 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jan 28 16:13:10.836 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 2 0 NM-1FE-TX 
+Jan 28 16:13:12.133 HYPERVISOR: exec_cmd: nio create_udp udp-0feac04c-2c33-4222-aa7d-9e57b1a518f2 10030 127.0.0.1 10031 
+Jan 28 16:13:12.351 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 2 udp-0feac04c-2c33-4222-aa7d-9e57b1a518f2 
+Jan 28 16:13:12.351 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jan 28 16:13:12.427 HYPERVISOR: exec_cmd: nio create_udp udp-8f35150c-466d-49c9-8b31-bc88c72c4043 10034 127.0.0.1 10035 
+Jan 28 16:13:12.430 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 0 udp-8f35150c-466d-49c9-8b31-bc88c72c4043 
+Jan 28 16:13:12.431 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jan 28 16:13:12.528 HYPERVISOR: exec_cmd: nio create_udp udp-502bab97-d4fb-4d94-b75f-1c87ccb7cc9d 10038 127.0.0.1 10039 
+Jan 28 16:13:12.530 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 3 udp-502bab97-d4fb-4d94-b75f-1c87ccb7cc9d 
+Jan 28 16:13:12.530 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jan 28 16:13:14.339 HYPERVISOR: exec_cmd: nio create_udp udp-047e5440-a4be-4584-994f-9ee15321a17e 10080 127.0.0.1 10081 
+Jan 28 16:13:14.341 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 1 udp-047e5440-a4be-4584-994f-9ee15321a17e 
+Jan 28 16:13:14.342 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jan 28 16:13:34.189 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Jan 28 16:13:34.189 VM: VM Ghost created.
+Jan 28 16:13:34.190 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/miguelferreira/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21(1).image 
+Jan 28 16:13:34.191 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jan 28 16:13:34.192 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/miguelferreira/Desktop/projetoredes-4/project-files/dynamips/c3725-advipservicesk9-mz.124-21(1).image-128.ghost 
+Jan 28 16:13:34.193 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 28 16:13:34.193 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Jan 28 16:13:34.194 HYPERVISOR: exec_cmd: vm start Ghost 
+Jan 28 16:13:34.455 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 28 16:13:34.455 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jan 28 16:13:34.660 VM: VM Ghost shutdown.
+Jan 28 16:13:34.664 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Jan 28 16:13:34.665 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jan 28 16:13:34.666 VM: VM Ghost destroyed.
+Jan 28 16:13:34.668 HYPERVISOR: exec_cmd: vm set_ghost_status ESW1 2 
+Jan 28 16:13:34.669 HYPERVISOR: exec_cmd: vm set_ghost_file ESW1 /home/miguelferreira/Desktop/projetoredes-4/project-files/dynamips/c3725-advipservicesk9-mz.124-21(1).image-128.ghost 
+Jan 28 16:13:34.670 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jan 28 16:13:34.671 HYPERVISOR: exec_cmd: vm set_config ESW1 configs/i1_startup-config.cfg 
+Jan 28 16:13:34.671 HYPERVISOR: exec_cmd: vm start ESW1 
+Jan 28 16:26:34.354 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jan 28 16:26:34.362 HYPERVISOR: exec_cmd: vm stop ESW1 
+Jan 28 16:26:34.530 VM: VM ESW1 shutdown.
+Jan 28 16:26:34.531 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Jan 28 16:43:10.738 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jan 28 16:43:10.752 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Jan 28 16:43:11.259 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jan 28 16:43:11.262 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Jan 28 16:43:11.264 HYPERVISOR: exec_cmd: vm delete ESW1 
+Jan 28 16:43:11.264 VM: VM ESW1 destroyed.
+Jan 28 16:43:11.267 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 28 16:43:11.745 HYPERVISOR: Stopped.
+Jan 28 16:43:11.745 GENERAL: reset done.
