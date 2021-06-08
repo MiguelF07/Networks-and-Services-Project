@@ -1,5 +1,5 @@
 # Networks-and-Services-Project
-This project was developed in the context of [Networks and Services](www.ua.pt/en/uc/14818) curricular unit, part of the Computer Science Bachelor at [Aveiro University](https://www.ua.pt/). It was lectured by [António Manuel Duarte Nogueira](https://www.ua.pt/en/p/10317117) during the 2020/2021 school year.
+This project was developed in the context of [Networks and Services](https://www.ua.pt/en/uc/14818) curricular unit, part of the Computer Science Bachelor at [Aveiro University](https://www.ua.pt/). It was lectured by [António Manuel Duarte Nogueira](https://www.ua.pt/en/p/10317117) during the 2020/2021 school year.
 
 It was graded **19,7 out of 20**
 
